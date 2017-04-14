@@ -1,0 +1,9 @@
+--- dpkgfiles/armory.orig	2017-04-13 23:35:57 UTC
++++ dpkgfiles/armory
+@@ -1,5 +1,5 @@
+ #!/usr/local/bin/bash
+-
++exec python %%LOCALBASE%%/lib/armory/ArmoryQt.py "$@"
+ unset CDPATH
+ DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+ exec python2 "$DIR"/../lib/armory/ArmoryQt.py "$@"
